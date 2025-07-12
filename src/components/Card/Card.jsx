@@ -1,9 +1,11 @@
 import styles from "./Card.module.css";
 
-const Card = ({ quote }) => {
+const Card = ({ quote, onDelete }) => {
   return (
     <div className={styles.card}>
-      <button className={styles.delete}>×</button>
+      <button className={styles.delete} onClick={onDelete}>
+        ×
+      </button>
       <div className={styles.content}>
         <p className={styles.quote}>&ldquo;{quote.text}&rdquo;</p>
       </div>
