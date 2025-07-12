@@ -1,0 +1,21 @@
+.home {
+  padding: var(--space-md);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.heading {
+  font-size: var(--font-lg);
+  font-weight: 600;
+}
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xl);
+}
