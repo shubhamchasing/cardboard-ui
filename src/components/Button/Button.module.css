@@ -1,0 +1,24 @@
+.base {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-base);
+  border-radius: var(--radius-sm);
+  /* transition: background-color 0.2s ease; */
+}
+
+.primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.danger {
+  background-color: var(--color-danger);
+  color: white;
+}
+
+.danger:hover {
+  background-color: var(--color-danger-hover);
+}
