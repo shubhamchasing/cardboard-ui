@@ -18,11 +18,11 @@ export const getQuotes = async () => {
   }
 };
 
-export const addQuote = async ({ author, quote }) => {
+export const addQuote = async ({ author, text }) => {
   try {
     const res = await request(QUOTES_ENDPOINT, {
       method: "POST",
-      body: JSON.stringify({ author, quote }),
+      body: JSON.stringify({ author, text }),
     });
     if (!res.ok)
       throw new Error("Failed to add quote. Please try again later.");
