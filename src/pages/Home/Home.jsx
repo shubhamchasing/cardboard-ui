@@ -57,8 +57,12 @@ const Home = () => {
 
   return (
     <div className={styles.home}>
-      <h1 className={styles.heading}>Quote Board</h1>
-      <Button onClick={openModal}>+ Add Quote</Button>
+      <header className={styles.navbar}>
+        <div className={styles.container}>
+          <h1 className={styles.title}>Quote Board</h1>
+          <Button onClick={openModal}>+ Add Quote</Button>
+        </div>
+      </header>
 
       {loading && <p>Loading...</p>}
       {!loading && error && <p className={styles.error}>{error}</p>}
